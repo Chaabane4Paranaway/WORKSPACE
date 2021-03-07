@@ -1,0 +1,15 @@
+<style>
+fieldset{
+    width: fit-content;
+    border: maroon 2px dashed;
+}
+input:hover{
+    background-color: #AACCEE;
+}
+input{
+    background-color: transparent;
+}
+body{
+    background-color: lightgray;
+}
+</style>

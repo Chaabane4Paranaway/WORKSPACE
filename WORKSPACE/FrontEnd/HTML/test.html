@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=input, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css"><title>Document</title>
+    <script>
+        function ajust(){  
+            var val,node;
+           
+             val=document.getElementById('range').value;
+             if(val>=90 && 100>=val){ 
+                 var x=document.body;
+                x.style.backgroundColor='pink';
+                x.style.color='white';
+            }
+            else off();
+           
+            node=document.getElementById('respond');
+            node.value=val;
+                }
+       function add(){
+           var noeud,parent,str;
+           str=prompt("Saisir le texte à ajouter",);
+           if(str=="") return alert("Recommencer")+add();
+           parent=document.getElementById('demo');
+           noeud=document.createElement('p');
+           parent.appendChild(noeud);
+           noeud.innerHTML=str;
+       }
+       function supp(){
+           var pere,ancien,nodev,node,str;
+           nodeV=document.getElementsByTagName('p')[1]; // ligne pour le code x
+           node=document.getElementById('demo').lastChild;
+           str=node.innerHTML;
+           alert("l'élément intitulé "+str+" vient d'être supprimé!!");
+            if (node!==nodev){ // code x: incorrect
+                pere=node.parentNode;
+                ancien=pere.removeChild(node);
+            }
+       }
+        function ajust2(){
+            var val,node,x=document.body;;
+             val=document.getElementById('respond').value;
+             if(val>=90 && val<=100){
+                x.style.backgroundColor='pink';
+                x.style.color='white';
+            }
+            else
+                if(val>100){
+                    x.style.backgroundColor='red';
+                }
+            
+            else off();
+            val=document.getElementById('respond').value;
+            node=document.getElementById('range');
+            node.value=val;
+        }
+        function off(){
+            var y;
+            y=document.body
+            y.style.backgroundColor='lightgray';
+            y.style.color='black';
+        }
+    </script>
+</head>
+<body>
+   <h3>My webpage test</h3>
+   <fieldset>
+       <legend><b>Formulaire</b></legend>
+           <div>
+           <label for="name">Entrez votre nom :</label>
+           <input id="name" type="text"><br>
+           <label for="age">Entrez votre âge:</label>
+           <input id="age" type="text"><br>
+           <label for="pseudo">Entrez un pseudonyme:</label>
+            <input id="pseudo" type="text"><br>
+           </div>
+           <div>
+               <input id="range" oninput="ajust()" type="range" min="1" max="100" step="1"><br>
+               <input id="respond" oninput="ajust2()" type="number" max="100"><br>
+               <br><br>
+              <label for="in">Essayes le:</label>
+              <br><button onclick="add()">Add</button><button onclick="supp()">Remove</button>
+              <span id="demo"></span><br>
+            
+           </div>
+   </fieldset>
+</body>    <style>
+                fieldset{
+                    width: fit-content;
+                    border: maroon 2px dashed;
+                }
+                input:focus{
+                    background-color:#dfeeaa;
+                }
+                input{
+                    background-color: transparent;
+                }
+                body{
+                    background-color: lightgray;
+                }
+            </style> 
+</html>

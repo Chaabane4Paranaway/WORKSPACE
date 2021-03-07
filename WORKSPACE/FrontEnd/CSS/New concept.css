@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100px;
+    height: 100vh;
+    background:violet
+/*background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container{
+    width: 100px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.123);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.562);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.171);
+}
+.container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+}
+i{
+    cursor: pointer;
+    margin: 30px;
+}
+.songName{
+    font-size: 1.2rem;
+    margin: 15px;font-family: 'Yusei Magic', sans-serif;
+}
+input[type="range"]{
+    width: 250px;
+    margin: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls-container{
+    width: 300px;
+    background: rgba(255, 255, 255, 0.137);
+    border-radius: 20px;
+    flex-direction: column;
+    margin-bottom: 50px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.171);
+}
+.controls{
+    width: 350px;
+}
