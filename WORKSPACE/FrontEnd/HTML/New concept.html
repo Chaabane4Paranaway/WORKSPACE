@@ -2,55 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="New concept.css">
-    <script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=">
+    <title>New concept</title>
+    <link rel="stylesheet" href="../CSS/New concept.css">
 </head>
 <body>
-    <audio src="EnBas.m4a" id="audio"></audio>
-    <div class="container">
-        <i class="fas fa-chevron-down fa-2x"></i>
-        <img src="https://i1.sndcdn.com/artworks-hgx1d81gN2Eu-0-t500x500.jpg" alt="">
-        <p class="songName">4Keus - En Bas</p>
-        <div class="controls-container center">
-            <div class="range">
-                <p style="float: left; margin: 15px 0 0 10px;" id="progress"></p>
-                <p sty
-                le="float: right; margin: 15px 10px 0 0;" id="duration"></p>
-                <input type="range" name="g" id="range" max="audio.duration()" min="0">
-            </div>
-            <div class="controls center">
-                <i class="fas fa-step-backward fa-2x" ></i>
-                <i class="fas fa-play fa-2x" id="btn" onclick="changeClass();"></i>
-                <i class="fas fa-step-forward fa-2x"></i>
-            </div>
-        </div>
+<div class="main">
+    <div class="div">
+        <svg height="80" width="80">
+            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="8" fill="none"></circle> 
+        </svg>
+    <i>h</i>
     </div>
-
-    <script>
-    audio=document.getElementById('audio');
-        audio.ontimeupdate = function() {set()};
-        function set(){
-            current=audio.currentTime;
-            document.getElementById('range').value=current;
-            document.getElementById('progress').innerHTML=current;
-            var time;
-            time = audio.duration();
-            document.getElementById('duration').innerHTML=time;
-        }
-        
-        const btn = document.getElementById("btn");
-        function changeClass(){
-            if(btn.classList.contains("fa-play")){
-                btn.classList.remove("fa-play");
-                btn.classList.add("fa-pause");
-                audio.play();
-            }else{
-                btn.classList.add("fa-play");
-                audio.pause();
-            }
-        }
-    </script>
+</div>
 </body>
 </html>
