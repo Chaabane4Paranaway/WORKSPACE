@@ -1,0 +1,23 @@
+body{
+
+}
+.left{
+text-align: left;
+}
+.right{
+text-align: right;
+}
+.center{
+text-align: center;
+}
+hr{
+    width: 40%;
+}
+fieldset{
+    margin-top: 10px;
+}
+textarea{
+    background: rgb(230, 230, 230);
+    border-right: none;
+    border-left: none;
+}

@@ -1,0 +1,36 @@
+body{
+    background-color: infinite linear-gradient(red,pink);
+}
+.container{
+    background:;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    height: 200px;
+    width: fit-content;
+    left: 50%;
+}
+fieldset{
+    border: solid 1px gray;
+    padding: 15px 15px 15px 15px;
+}
+.button1:hover{
+    background: gray;
+}
+.sign,.end{
+    text-align: center;
+    padding: 10px;
+}
+.button1{
+    outline: none;
+    border: none;
+    border-bottom: solid 1px;
+    border-radius: 0%;
+}
+.button{
+    margin-left: 10px;
+    margin-top: 20px;
+    border: none;
+    background: green;
+    width: fit-content;
+}
