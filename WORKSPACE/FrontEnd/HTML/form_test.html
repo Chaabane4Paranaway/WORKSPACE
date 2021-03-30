@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table{
+            font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+            border: 2px solid rgb(132, 207, 57);
+        }
+        p{
+            margin: auto;
+            font-weight: bold;
+        }
+        .end{
+            background-color: rgb(132, 207, 57);
+            border-color: rgb(132, 207, 57);
+            color: white;
+            width: 80px;
+            font-weight: bold;
+        }
+        div{
+            background-color: rgb(132, 207, 57);
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form style="position:absolute;left: 15%;" action="Post">
+        <table id="table">
+            <tr style="background-color: rgb(132, 207, 57);">
+                <td colspan="2">
+                    <b>Contact Manager</b> <select style="background-color: transparent; border: solid rgb(132, 207, 57) 1px;"><option value="x">More Actions</option>
+                    <option value="y">mo action2</option></select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>First name<span>*</span></p>
+                            </td>
+                            <td>
+                                <input required type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p> Last name <span>*</span>
+                            </td>
+                            <td>
+                                <input required type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Address</p>
+                            </td>
+                            <td>
+                                <textarea name="" id="address cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>City</p>
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>State</p>
+                            </td>
+                            <td>
+                                <select style="width: 176.5px;">
+                                    <option value="default">-select-</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Zip</p>
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Home phone</p>
+                            </td>
+                            <td>
+                                <input type="tel">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Work phone <span>*</span></p>
+                            </td>
+                            <td>
+                                <input required type="tel">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Fax number</p>
+                            </td>
+                            <td>
+                                <input type="tel">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p> Website</p>
+                            </td>
+                            <td>
+                                <label for="url">URL</label>
+                                <input id="url" type="url"><br>
+                                <label for="link">Link Name</label>
+                                <input id="link" type="text" ><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p> Email Address <span>*</span></p>
+                            </td>
+                            <td>
+                                <input required type="email">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><p>When is the best time to contact you ?</p></td>
+                            <td><input type="radio" id="m" name="t" value="morning"><label for="m">Morning</label><br><input id="a" type="radio" name="t" value="afternoon"><label for="a">Afternoon</label><br><input id="e" type="radio" name="t" value="evening"><label for="e">Evening</label><br></td>
+                        </tr>
+                        <tr>
+                            <td><p>What is the best way to contact you? ?</p></td>
+                            <td><input type="radio" id="phone" name="w" value="phone"><label for="phone">Phone</label><br><input id="email" type="radio" name="w" value="email"><label for="email">Email</label><br><input id="fax" type="radio" name="w" value="fax"><label for="fax">Fax</label><br></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9"><p>Message</td></tr>
+                            <td rowspan="9"><textarea name="message" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: rgb(185, 173, 173); text-align: center;">
+                    <input class="end" type="submit" value="Submit"><input class="end" type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>    
+</body>
+</html>

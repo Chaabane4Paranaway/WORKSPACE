@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SERVEUR</title>
 </head>
 <body>
-    <?php 
-    if (isset($_POST['name']))
+<?php
+    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ==  "kangourou") // Si le mot de passe est bon
     {
-        echo 'hello'.strip_tags($_POST['name']);
+    // On affiche les codes
+    ?>
+        <h1>Voici les codes d'accès :</h1>
+        <p><strong>CRD5-GTFT-CK65-JOPM-V29N-24G1-HH28-LLFV</strong></p>   
+        
+        <p>
+        Cette page est réservée au personnel de la NASA. N'oubliez pas de la visiter régulièrement car les codes d'accès sont changés toutes les semaines.<br />
+        La NASA vous remercie de votre visite.
+        </p>
+        <?php
     }
-            
+    else // Sinon, on affiche un message d'erreur
+    {
+        echo '<p>Mot de passe incorrect</p>';
+    }
     ?>
 </body>
 </html>
