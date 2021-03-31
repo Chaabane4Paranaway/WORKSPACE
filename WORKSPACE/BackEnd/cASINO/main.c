@@ -55,6 +55,9 @@ void play()
 {
     int select_mise=1,select;
     int score;
+    par deux j'ai multiplié le benef
+    bcbcjbcbjd
+    ddcdcdcdcccccd
     double solde;
     int cond=1;
     
