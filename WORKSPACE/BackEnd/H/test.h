@@ -11,3 +11,4 @@ void ECRIRE_TAB(int TAB[],int N);
 long SOMME_TAB(int TAB[],int N);
 void EXO5(int X,int A[],int N);
 void INVERSE(int TAB[],int N);
+//hello
